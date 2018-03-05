@@ -32,6 +32,6 @@ def checkin():
 if __name__ == '__main__':
 	mariadb_connection = mariadb.connect(user='brad', password='password', database='thesis')
 	cursor = mariadb_connection.cursor()
-	app.run('0.0.0.0')
+	app.run('127.0.0.1')
 
 #curl -H "Content-Type: application/json" -X POST -d '{"id":"3126bd03-7365-4256-85e7-7e607ce35e01","type":"fromvm"}' http://138.68.43.10:5000/checkin
